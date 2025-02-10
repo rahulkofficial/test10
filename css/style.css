@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background: linear-gradient(to right,#000,#2c4a9d,#000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
+}
+
+header div.left{
+    width: 6%;
+}
+
+header div.left h1 a{
+    display: block;
+    width: 100%;
+}
+header div.left h1 a img{
+    display: block;
+    width: 100%;
+}
+header div.right a{
+    color:#fff;
+    margin-right: 20px;
+}
+
+header div.right a:last-child{
+    margin-right: 0;
+}
+
+header div.right a:hover{
+    color:#e4e4e4;
+}
+
+div.main{
+    background: #d7d7d7;
+    height: 100vh;
+}
+
+div.main h1{
+    padding-top: 90px;
+    font-family: 26px;
+    color: #081741;
+    margin-bottom: 20px;
+}
+div.main div.input{
+    background: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    border-radius: 10px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+div.main div.input input{
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+div.main div.input button{
+    background: #2c4a9d;
+    padding: 4px 8px;
+    border: none;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+div.main div.input button:hover{
+    background: #091536;
+    cursor: pointer;
+}
+div.main ul{
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    height: 440px;
+    overflow: auto;
+}
+
+div.main ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+div.main ul li.co{
+    background: none;
+}
+
+div.main ul li h1{
+    padding-top: 0;
+    font-size:20px ;
+    font-weight: 500;
+    margin: 0;
+    color: #000;
+}
+
+div.main ul li.co h1{
+    color: #176119;
+    text-decoration: line-through;
+}
+
+div.main ul li button.com{
+    cursor: pointer;
+    background: none;
+    border:2px solid #10c516;
+    padding: 4px 8px;
+    border-radius: 10px;
+    color: #10c516;
+}
+div.main ul li.co button.com{
+    visibility: hidden;
+}
+
+div.main ul li button.com:hover{
+    background: #10c51653;
+}
+
+div.main ul li button.del{
+    cursor: pointer;
+    padding: 1px;
+}
+div.main ul li button.del:hover{
+    background: #c5101053;
+}
+
+div.main ul li button.del img{
+    width: 18px;
+}
